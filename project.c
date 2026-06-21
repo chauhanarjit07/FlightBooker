@@ -514,7 +514,7 @@ void signup(){
     else{
         printf("ACCOUNT CREATED SUCESSFULLY\n"); 
         getch();
-        FILE *fp= fopen("report.txt","a");
+        FILE *fp= fopen("account.txt","a");
         fprintf(fp,"\n%s %s %s %s %c %s %s",u.first_name,u.last_name, u.username,u.phone,u.gender,u.dob,u.password);
         fclose(fp);
     }
@@ -537,7 +537,7 @@ void login(){
     printf("Enter username: ");
     gets(uname);
 
-    FILE *fp = fopen("report.txt","r");
+    FILE *fp = fopen("account.txt","r");
 
     while(fscanf(fp,"%s %s %s %s %c %s %s",
         u.first_name,u.last_name,u.username,
