@@ -1,161 +1,169 @@
-# ✈️ Flight Ticket Booking System
+# ✈️ FlightBooker
 
 <div align="center">
 
-### A Feature-Rich Airline Reservation System Built in C
+### A Console-Based Flight Reservation System in C
 
-Search Flights • Book Tickets • Manage Reservations • Secure Authentication
+**Authenticate → Search → Sort → Book → Manage**
+
+A practical C project demonstrating structured programming, file handling, searching, sorting, and a complete ticket-booking workflow.
 
 </div>
 
 ---
 
-## 📖 Overview
+## 🧭 Project Overview
 
-The Flight Ticket Booking System is a console-based airline reservation application developed in C. It provides a complete booking workflow, allowing users to search available flights, create accounts, book tickets, view reservations, and cancel bookings.
+**FlightBooker** is a terminal-based airline reservation system written in C. It brings together user authentication, flight discovery, sorting, passenger booking, ticket generation, booking search, and cancellation in one application.
 
-The project demonstrates practical implementation of file handling, structures, sorting algorithms, authentication systems, and modular programming in C.
+The project focuses on applying core C programming concepts to a realistic problem rather than building isolated exercises.
 
----
+## ✨ Highlights
 
-## ✨ Key Features
+| Module | What it does |
+|---|---|
+| 🔐 Authentication | Sign up, login, and account management |
+| 🔎 Flight Search | Find flights by source and destination |
+| 📊 Sorting | Sort matching flights by time, price, or seats |
+| 🎟️ Booking | Book one or multiple passengers |
+| 🧾 Ticketing | Generate a formatted ticket in the terminal |
+| 🔍 Booking Search | Find an existing reservation |
+| ❌ Cancellation | Cancel an existing booking |
+| 💾 Persistence | Store accounts, flights, and bookings in text files |
 
-### 🔐 User Authentication
-
-* User Registration
-* Secure Login System
-* Password Masking Support
-* Account Management
-
-### ✈️ Flight Management
-
-* Search Flights by Route
-* View Flight Information
-* Check Seat Availability
-* Display Ticket Prices
-
-### 🎟️ Ticket Booking
-
-* Book Single or Multiple Tickets
-* Passenger Information Management
-* Instant Ticket Generation
-* Booking Confirmation
-
-### 📊 Smart Flight Sorting
-
-* Sort Flights by Departure Time
-* Sort Flights by Ticket Price
-* Sort Flights by Available Seats
-
-### 📁 Data Persistence
-
-* File-Based Storage System
-* User Records Management
-* Booking History Storage
-* Flight Database Handling
-
-### ❌ Reservation Management
-
-* Search Existing Bookings
-* Cancel Reservations
-* View Ticket Details
-
----
-
-## 🛠️ Built With
-
-| Technology         | Purpose           |
-| ------------------ | ----------------- |
-| C Language         | Core Development  |
-| File Handling      | Data Storage      |
-| Structures         | Data Organization |
-| Functions          | Modular Design    |
-| Sorting Algorithms | Flight Sorting    |
-| Console UI         | User Interaction  |
-
----
-
-## 📂 Project Architecture
+## 🧠 System Flow
 
 ```text
-Flight_Ticket_Booking_System
-│
-├── main.c
-├── flights.txt
-├── booking.txt
-├── report.txt
-│
-├── Authentication Module
-├── Flight Search Module
-├── Booking Module
-├── Ticket Management Module
-└── Sorting Module
+                 ┌──────────────┐
+                 │    START     │
+                 └──────┬───────┘
+                        ▼
+                ┌───────────────┐
+                │ Authentication│
+                └──────┬────────┘
+                       ▼
+                ┌───────────────┐
+                │ Flight Search │
+                └──────┬────────┘
+                       ▼
+              ┌──────────────────┐
+              │ Sort / Compare   │
+              │ Time • Price •   │
+              │ Available Seats  │
+              └────────┬─────────┘
+                       ▼
+                ┌───────────────┐
+                │ Book Ticket   │
+                └──────┬────────┘
+                       ▼
+                ┌───────────────┐
+                │ Generate      │
+                │ Ticket        │
+                └──────┬────────┘
+                       ▼
+                ┌───────────────┐
+                │ Search /      │
+                │ Cancel Booking│
+                └───────────────┘
 ```
 
----
-
-## 🚀 Core Functionalities
+## 📁 Repository Structure
 
 ```text
-User Authentication
-        │
-        ▼
-   Search Flights
-        │
-        ▼
-    Book Tickets
-        │
-        ▼
- Generate Ticket
-        │
-        ▼
- Manage Bookings
+FlightBooker/
+├── src/
+│   └── project.c                 # Main application source
+│
+├── data/
+│   ├── account.txt               # User account records
+│   ├── booking.txt               # Booking records
+│   └── flights.txt               # Flight dataset
+│
+├── docs/
+│   └── projectpresentation.html  # Project presentation
+│
+└── README.md
 ```
 
----
+## 🛠️ Concepts Demonstrated
 
-## 🎯 Concepts Demonstrated
+- **Structures** for accounts, flights, and passengers
+- **File handling** for persistent text-based storage
+- **Searching** for flights and bookings
+- **Sorting algorithms** for flight comparison
+- **Functions** for modular program organization
+- **Console UI** with formatted tables and ticket output
+- **Authentication flow** for user access
 
-* Structured Programming
-* File Handling in C
-* Data Structures using Structs
-* Searching Techniques
-* Sorting Algorithms
-* Modular Programming
-* Console-Based Application Design
+## 🚀 Getting Started
 
----
+### 1. Clone the repository
 
-## 📸 Highlights
+```bash
+git clone https://github.com/chauhanarjit07/FlightBooker.git
+cd FlightBooker
+```
 
-✅ User Authentication System
+### 2. Compile
 
-✅ Flight Search Engine
+```bash
+gcc src/project.c -o FlightBooker
+```
 
-✅ Ticket Booking Workflow
+> **Note:** The project uses console functions such as `conio.h` and `getch()`, so compilation may require a Windows-compatible C environment.
 
-✅ Reservation Management
+### 3. Run
 
-✅ File-Based Database
+```bash
+FlightBooker.exe
+```
 
-✅ Sorting and Filtering
+Keep the `data/` directory available from the program's working directory because the application reads and writes its text-based records there.
 
----
+## 📦 Data Layer
+
+FlightBooker intentionally uses simple text files instead of a database so the project can demonstrate **C file handling and persistent storage** directly.
+
+```text
+data/
+├── account.txt   → registered users
+├── flights.txt   → available flights
+└── booking.txt   → passenger bookings
+```
+
+## 🎯 Why This Project?
+
+FlightBooker is a useful learning project because it connects multiple programming fundamentals into one realistic workflow:
+
+**Data → Algorithms → File Handling → User Interaction → Complete Application**
+
+Instead of only practicing sorting or structures independently, the project shows how these concepts cooperate inside a larger system.
+
+## 🔮 Future Scope
+
+- Database integration with MySQL
+- Improved password security
+- Seat-level reservation management
+- Admin dashboard for flight management
+- Better cross-platform terminal support
+- Input validation and error handling improvements
+- Online payment simulation
+- REST API / web frontend integration
 
 ## 👨‍💻 Developer
 
 ### Arjit Chauhan
 
-🎓 B.Tech Student
-
-💻 C Programmer | ASP.NET Developer | Database Enthusiast
-
-🌱 Passionate about Software Development and Problem Solving
-
----
+B.Tech Computer Science Student · C Programmer · Problem Solver
 
 ## ⭐ Support
 
-If you found this project helpful, consider giving it a ⭐ on GitHub.
+If FlightBooker helped you understand C programming or file-based application design, consider giving the repository a **⭐ Star**.
 
-It motivates future improvements and helps others discover the project.
+---
+
+<div align="center">
+
+**Built with C 💻 and a little ✈️ ambition**
+
+</div>
