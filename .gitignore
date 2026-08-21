@@ -1,0 +1,21 @@
+# C/C++ build output
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# IDE/editor files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
