@@ -31,6 +31,38 @@ The project focuses on applying core C programming concepts to a realistic probl
 | ❌ Cancellation | Cancel an existing booking |
 | 💾 Persistence | Store accounts, flights, and bookings in text files |
 
+## 📸 Application Screenshots
+
+The following screenshots show the main console workflow of FlightBooker, from authentication and flight discovery through booking and ticket management.
+
+> **Note:** Screenshots are stored in the `docs/` directory of this repository.
+
+### 🏠 Application Interface
+
+![FlightBooker Screenshot 1](docs/Screenshot%202026-04-27%20190450.png)
+
+![FlightBooker Screenshot 2](docs/Screenshot%202026-04-27%20190459.png)
+
+### 🔎 Flight Search & Selection
+
+![FlightBooker Flight Search](docs/Screenshot%202026-04-27%20190541.png)
+
+![FlightBooker Flight Options](docs/Screenshot%202026-04-27%20190627.png)
+
+### 🎟️ Booking Workflow
+
+![FlightBooker Booking](docs/Screenshot%202026-04-27%20190648.png)
+
+![FlightBooker Booking Details](docs/Screenshot%202026-04-27%20191414.png)
+
+### 🧾 Ticket & Reservation Management
+
+![FlightBooker Ticket](docs/Screenshot%202026-04-27%20191506.png)
+
+![FlightBooker Reservation](docs/Screenshot%202026-04-27%20191536.png)
+
+![FlightBooker Final Screen](docs/Screenshot%202026-04-27%20191613.png)
+
 ## 🧠 System Flow
 
 ```text
@@ -80,7 +112,8 @@ FlightBooker/
 │   └── flights.txt               # Flight dataset
 │
 ├── docs/
-│   └── projectpresentation.html  # Project presentation
+│   ├── projectpresentation.html  # Project presentation
+│   └── *.png                     # Application screenshots
 │
 └── README.md
 ```
