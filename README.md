@@ -106,23 +106,28 @@ cd FlightBooker
 
 ### 2. Compile
 
+From the repository root:
+
 ```bash
-gcc src/project.c -o FlightBooker
+gcc src/project.c -o FlightBooker.exe
 ```
 
-> **Note:** The project uses console functions such as `conio.h` and `getch()`, so compilation may require a Windows-compatible C environment.
+> **Note:** The current source reads and writes `account.txt`, `booking.txt`, and `flights.txt` from the program's current working directory. Because these files are organized inside `data/`, run the executable from that directory.
 
 ### 3. Run
 
-```bash
-FlightBooker.exe
+On Windows:
+
+```bat
+cd data
+..\FlightBooker.exe
 ```
 
-Keep the `data/` directory available from the program's working directory because the application reads and writes its text-based records there.
+This keeps the runtime data together inside `data/` while leaving the source code and documentation cleanly separated.
+
+> The project uses console functions such as `conio.h` and `getch()`, so compilation may require a Windows-compatible C environment.
 
 ## 📦 Data Layer
-
-FlightBooker intentionally uses simple text files instead of a database so the project can demonstrate **C file handling and persistent storage** directly.
 
 ```text
 data/
@@ -131,13 +136,15 @@ data/
 └── booking.txt   → passenger bookings
 ```
 
+FlightBooker intentionally uses simple text files instead of a database so the project can demonstrate **C file handling and persistent storage** directly.
+
 ## 🎯 Why This Project?
 
-FlightBooker is a useful learning project because it connects multiple programming fundamentals into one realistic workflow:
+FlightBooker connects multiple programming fundamentals into one realistic workflow:
 
 **Data → Algorithms → File Handling → User Interaction → Complete Application**
 
-Instead of only practicing sorting or structures independently, the project shows how these concepts cooperate inside a larger system.
+Instead of practicing sorting, structures, or file handling independently, the project shows how these concepts cooperate inside a larger system.
 
 ## 🔮 Future Scope
 
@@ -146,7 +153,7 @@ Instead of only practicing sorting or structures independently, the project show
 - Seat-level reservation management
 - Admin dashboard for flight management
 - Better cross-platform terminal support
-- Input validation and error handling improvements
+- Stronger input validation and error handling
 - Online payment simulation
 - REST API / web frontend integration
 
