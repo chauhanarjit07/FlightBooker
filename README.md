@@ -33,35 +33,37 @@ The project focuses on applying core C programming concepts to a realistic probl
 
 ## 📸 Application Screenshots
 
-The following screenshots show the main console workflow of FlightBooker, from authentication and flight discovery through booking and ticket management.
+The following screenshots demonstrate the main FlightBooker console workflow, from authentication and flight discovery through booking and reservation management.
 
-> **Note:** Screenshots are stored in the `docs/` directory of this repository.
+All screenshots are organized in the [`docs/screenshots`](docs/screenshots) folder.
 
 ### 🏠 Application Interface
 
-![FlightBooker Screenshot 1](docs/Screenshot%202026-04-27%20190450.png)
+![FlightBooker Application Interface](docs/screenshots/Screenshot%202026-04-27%20190450.png)
 
-![FlightBooker Screenshot 2](docs/Screenshot%202026-04-27%20190459.png)
+![FlightBooker Main Screen](docs/screenshots/Screenshot%202026-04-27%20190459.png)
 
 ### 🔎 Flight Search & Selection
 
-![FlightBooker Flight Search](docs/Screenshot%202026-04-27%20190541.png)
+![FlightBooker Flight Search](docs/screenshots/Screenshot%202026-04-27%20190541.png)
 
-![FlightBooker Flight Options](docs/Screenshot%202026-04-27%20190627.png)
+![FlightBooker Flight Options](docs/screenshots/Screenshot%202026-04-27%20190627.png)
 
 ### 🎟️ Booking Workflow
 
-![FlightBooker Booking](docs/Screenshot%202026-04-27%20190648.png)
+![FlightBooker Booking](docs/screenshots/Screenshot%202026-04-27%20190648.png)
 
-![FlightBooker Booking Details](docs/Screenshot%202026-04-27%20191414.png)
+![FlightBooker Booking Details](docs/screenshots/Screenshot%202026-04-27%20191414.png)
 
 ### 🧾 Ticket & Reservation Management
 
-![FlightBooker Ticket](docs/Screenshot%202026-04-27%20191506.png)
+![FlightBooker Ticket](docs/screenshots/Screenshot%202026-04-27%20191506.png)
 
-![FlightBooker Reservation](docs/Screenshot%202026-04-27%20191536.png)
+![FlightBooker Reservation](docs/screenshots/Screenshot%202026-04-27%20191536.png)
 
-![FlightBooker Final Screen](docs/Screenshot%202026-04-27%20191613.png)
+![FlightBooker Final Screen](docs/screenshots/Screenshot%202026-04-27%20191613.png)
+
+![FlightBooker Additional Screen](docs/screenshots/Screenshot%202026-04-27%20191655.png)
 
 ## 🧠 System Flow
 
@@ -112,8 +114,9 @@ FlightBooker/
 │   └── flights.txt               # Flight dataset
 │
 ├── docs/
-│   ├── projectpresentation.html  # Project presentation
-│   └── *.png                     # Application screenshots
+│   ├── screenshots/              # Application screenshots
+│   │   └── *.png
+│   └── projectpresentation.html  # Project presentation
 │
 └── README.md
 ```
