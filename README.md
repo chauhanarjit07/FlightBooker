@@ -12,13 +12,13 @@ A practical C project demonstrating structured programming, file handling, searc
 
 ---
 
-## 🧭 Project Overview
+## 🧭 Overview
 
 **FlightBooker** is a terminal-based airline reservation system written in C. It brings together user authentication, flight discovery, sorting, passenger booking, ticket generation, booking search, and cancellation in one application.
 
 The project focuses on applying core C programming concepts to a realistic problem rather than building isolated exercises.
 
-## ✨ Highlights
+## ✨ Features
 
 | Module | What it does |
 |---|---|
